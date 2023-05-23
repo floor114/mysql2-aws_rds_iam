@@ -11,3 +11,19 @@ Layout/LineLength:
 
 Style/Documentation:
   Enabled: false
+
+Naming/FileName:
+  Exclude:
+    - lib/mysql2-aws_rds_iam.rb
+
+Metrics/MethodLength:
+  Max: 15
+  Exclude:
+    - test/**/**.rb
+
+Metrics/AbcSize:
+  Max: 20
+
+Metrics/ClassLength:
+  Exclude:
+    - test/**/**.rb
