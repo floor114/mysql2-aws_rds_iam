@@ -2,7 +2,7 @@
 
 [![Gem](https://img.shields.io/gem/v/mysql2-aws_rds_iam)](https://rubygems.org/gems/mysql2-aws_rds_iam)
 &ensp;
-![CI](https://img.shields.io/github/actions/workflow/status/floor114/mysql2-aws_rds_iam/ci.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/floor114/mysql2-aws_rds_iam/ci.yml)](https://github.com/floor114/mysql2-aws_rds_iam/actions/workflows/ci.yml)
 
 `Mysql2::AwsRdsIam` is an extension of [mysql2](https://github.com/brianmario/mysql2) gem that adds support of [IAM authentication](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html) when connecting to MySQL in Amazon RDS.
 
