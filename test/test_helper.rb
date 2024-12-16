@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 require 'pry'
+require 'timecop'
+
+Timecop.mock_process_clock = true
+Timecop.safe_mode = true
 
 $LOAD_PATH.unshift File.expand_path('../lib', __dir__)
 
