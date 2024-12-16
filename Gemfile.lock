@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mysql2-aws_rds_iam (0.1.0)
+    mysql2-aws_rds_iam (0.2.0)
       aws-sdk-rds (~> 1)
       mysql2
       zeitwerk (~> 2)
