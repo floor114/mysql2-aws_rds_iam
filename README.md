@@ -41,9 +41,9 @@ The default algorithm is `Mysql2::AwsRdsIam`'s [default authentication token gen
 To connect to your MySQL database, you need to create initializer file that applies the patch:
 
   ```ruby
-  # config/initializers/tcc_rds_iam_auth.rb
+  # config/initializers/mysql2_aws_rds_iam_auth.rb
 
-  Tcc::RdsIamAuth.apply_patch
+  Mysql2::AwsRdsIam.apply_patch
 
   ```
 
@@ -60,7 +60,7 @@ New rds_iam_auth_host parameter must be added to the database.yml file:
 If the default generator doesn't meet your needs, you can create a custom one
 
   ```ruby
-  # config/initializers/tcc_rds_iam_auth.rb
+  # config/initializers/mysql2_aws_rds_iam_auth.rb
 
   Mysql2::AwsRdsIam.auth_token_registry.add(:custom, ->(host, port, username) { 'your custom logic' })
 
